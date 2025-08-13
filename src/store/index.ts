@@ -1,8 +1,10 @@
 import {storage} from "@/utils/storeage";
 import {createPinia} from "pinia";
-import {createPersistedState} from "pinia-plugin-persistedstate";
+import {createPersistedState} from "pinia-plugin-persistedstate"; // -- "pinia-plugin-persistedstate": "^3.2.3" : 使用 4 会报错
 
 const pinia = createPinia();
+
+// pinia.use(aaa);
 
 pinia.use(
     createPersistedState({

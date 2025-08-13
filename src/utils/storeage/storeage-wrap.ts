@@ -80,7 +80,7 @@ class HStorage {
 
             console.log(JSON.parse(serialized), "serialized");
 
-            let item = null;
+            let item: any = null;
             if (this.encrypt) item = this.decryptData(serialized) as any; // -- 解密
             else item = JSON.parse(serialized) as {value: T; expires?: number};
 
