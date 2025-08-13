@@ -5,18 +5,30 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path" : "pages/me/me",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "Txw",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+        "pageOrientation": "portrait",
+        "app-plus": {
+			"bounce": "none",
+			"scrollIndicator": "none"
+		}
 	},
 	"easycom": {
 		"autoscan": true,
 		"custom": {
-			"^txw-(.*)": "@/components/txw-$1.vue"
+			"^txw-(.*)": "@/components/txw-$1"
 		}
 	}
 }
