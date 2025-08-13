@@ -1,4 +1,4 @@
-import {storage} from "@/pages/utils/storeage";
+import {storage} from "@/utils/storeage";
 import {createPinia} from "pinia";
 import {createPersistedState} from "pinia-plugin-persistedstate";
 

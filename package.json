@@ -50,6 +50,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-4030620241128001",
     "@dcloudio/uni-mp-xhs": "3.0.0-4030620241128001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4030620241128001",
+    "axios": "^1.11.0",
     "jsencrypt": "^3.5.4",
     "pinia": "^3.0.3",
     "pinia-plugin-persistedstate": "^3.2.3",
