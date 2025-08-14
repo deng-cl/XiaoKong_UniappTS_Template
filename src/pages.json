@@ -1,4 +1,13 @@
 {
+    "easycom": {
+		"autoscan": true,
+		"custom": {
+			"^txw-(.*)": "@/components/txw-$1",
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+	        "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
 	"pages": [
         {
 			"path": "pages/home/home",
@@ -23,12 +32,6 @@
         "app-plus": {
 			"bounce": "none",
 			"scrollIndicator": "none"
-		}
-	},
-	"easycom": {
-		"autoscan": true,
-		"custom": {
-			"^txw-(.*)": "@/components/txw-$1"
 		}
 	}
 }

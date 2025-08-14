@@ -2,15 +2,19 @@ import {defineConfig} from "vite";
 import uni from "@dcloudio/vite-plugin-uni";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-    plugins: [uni()],
+export default defineConfig(async () => {
+    const UnoCSS = await import("unocss/vite").then((i) => i.default);
 
-    css: {
-        preprocessorOptions: {
-            scss: {
-                api: "modern-compiler",
-                silenceDeprecations: ["legacy-js-api"],
+    return {
+        plugins: [uni(), UnoCSS()],
+
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    api: "modern-compiler",
+                    silenceDeprecations: ["legacy-js-api", "color-functions", "import"],
+                },
             },
         },
-    },
+    };
 });

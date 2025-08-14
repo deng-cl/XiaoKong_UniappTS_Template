@@ -1,6 +1,17 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "preserve",
+    "strict": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "noImplicitThis": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
@@ -9,6 +20,7 @@
     "lib": ["esnext", "dom"],
     "types": [
       "@dcloudio/types",
+      "uview-plus/types"
     ],
     "noImplicitAny": false
   },
